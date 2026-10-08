@@ -11,6 +11,6 @@ These scripts work but will need tweaking to work for you.
 
    Note: I use sqlean rather than sqlite because it has a postgres compatible regexp_substr()
    see https://github.com/nalgeon/sqlean
-   see https://antonz.org/sqlean-regexp/
+   and https://antonz.org/sqlean-regexp/
    
    
