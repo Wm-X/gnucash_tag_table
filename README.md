@@ -8,4 +8,9 @@ These scripts work but will need tweaking to work for you.
 3. run tag_table.sh
 4. load tag_table.csv into a spreadsheet, select the whole thing and make a pivot table
 5. have fun doing endless analysis
+
+   Note: I use sqlean rather than sqlite because it has a postgres compatible regexp_substr()
+   see https://github.com/nalgeon/sqlean
+   see https://antonz.org/sqlean-regexp/
+   
    
