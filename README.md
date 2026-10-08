@@ -13,4 +13,5 @@ These scripts work but will need tweaking to work for you.
    see https://github.com/nalgeon/sqlean
    and https://antonz.org/sqlean-regexp/
    
-   
+here is a pic of a pivot table
+https://github.com/Wm-X/gnucash_tag_table/blob/main/Clipboard_10-08-2026_01.png 
