@@ -72,7 +72,7 @@ ORDER BY transactions.post_date
 ),
 tag_list AS (
     SELECT s.guid AS split_id,
-           "tx_des" AS  tag_location,
+           "tx_desc" AS  tag_location,
            regexp_substr(description,@tagRE) AS tag
       FROM transactions t
            JOIN
@@ -86,18 +86,26 @@ tag_list AS (
            splits s ON tx_guid = t.guid
     UNION
     SELECT s.guid AS split_id,
-           "sp_mem" AS  tag_location,
+           "sp_memo" AS  tag_location,
            regexp_substr(memo,@tagRE) AS tag
       FROM splits s
            JOIN
            transactions t ON t.guid = tx_guid
     UNION
     SELECT s.guid AS split_id,
-           "sp_act" AS  tag_location,
+           "sp_action" AS  tag_location,
            regexp_substr(action,@tagRE) AS tag
       FROM splits s
            JOIN
            transactions t ON t.guid = tx_guid
+	UNION
+	SELECT s.guid AS split_id,
+       "tx_notes" AS tag_location,
+       regexp_substr(slots.string_val,@tagRE) AS tag
+    FROM slots
+       JOIN
+       splits s ON s.tx_guid = slots.obj_guid
+       WHERE slots.name = 'notes'
 )
 SELECT *
   FROM tag_list l
