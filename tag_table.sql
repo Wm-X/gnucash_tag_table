@@ -1,5 +1,5 @@
 .parameter init
-.parameter set @tagRE "'AB'"
+.parameter set @tagRE "'o'"
 
 WITH RECURSIVE tree (
     guid,
@@ -73,35 +73,40 @@ ORDER BY transactions.post_date
 tag_list AS (
     SELECT s.guid AS split_id,
            "tx_desc" AS  tag_location,
-           regexp_substr(description,@tagRE) AS tag
+           regexp_substr(description,@tagRE) AS tag,
+		   description as txt
       FROM transactions t
            JOIN
            splits s ON tx_guid = t.guid
     UNION
     SELECT s.guid AS split_id,
            "tx_num" AS  tag_location,
-           regexp_substr(num,@tagRE) AS tag
+           regexp_substr(num,@tagRE) AS tag,
+		   num as txt
       FROM transactions t
            JOIN
            splits s ON tx_guid = t.guid
     UNION
     SELECT s.guid AS split_id,
            "sp_memo" AS  tag_location,
-           regexp_substr(memo,@tagRE) AS tag
+           regexp_substr(memo,@tagRE) AS tag,
+		   memo as txt
       FROM splits s
            JOIN
            transactions t ON t.guid = tx_guid
     UNION
     SELECT s.guid AS split_id,
            "sp_action" AS  tag_location,
-           regexp_substr(action,@tagRE) AS tag
+           regexp_substr(action,@tagRE) AS tag,
+		   action as txt
       FROM splits s
            JOIN
            transactions t ON t.guid = tx_guid
 	UNION
 	SELECT s.guid AS split_id,
-       "tx_notes" AS tag_location,
-       regexp_substr(slots.string_val,@tagRE) AS tag
+           "tx_notes" AS tag_location,
+           regexp_substr(slots.string_val,@tagRE) AS tag,
+	       string_val as txt
     FROM slots
        JOIN
        splits s ON s.tx_guid = slots.obj_guid
@@ -110,7 +115,7 @@ tag_list AS (
 SELECT *
   FROM tag_list l
   INNER JOIN jnl j ON j.splits_guid = l.split_id
-  WHERE tag IS NOT NULL
-    AND val != 0
+  WHERE val != 0
+    AND tag IS NOT NULL
   GROUP BY l.split_id
 ;
