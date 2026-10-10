@@ -1,5 +1,5 @@
 .parameter init
-.parameter set @tagRE "'#[A-Za-z0-9]'"
+.parameter set @tagRE "'AB'"
 
 WITH RECURSIVE tree (
     guid,
@@ -78,7 +78,7 @@ tag_list AS (
            JOIN
            splits s ON tx_guid = t.guid
     UNION
-        SELECT s.guid AS split_id,
+    SELECT s.guid AS split_id,
            "tx_num" AS  tag_location,
            regexp_substr(num,@tagRE) AS tag
       FROM transactions t
@@ -91,7 +91,7 @@ tag_list AS (
       FROM splits s
            JOIN
            transactions t ON t.guid = tx_guid
-           UNION
+    UNION
     SELECT s.guid AS split_id,
            "sp_act" AS  tag_location,
            regexp_substr(action,@tagRE) AS tag
@@ -104,8 +104,5 @@ SELECT *
   INNER JOIN jnl j ON j.splits_guid = l.split_id
   WHERE tag IS NOT NULL
     AND val != 0
-	
-	
-  
-  
-  
+  GROUP BY l.split_id
+;
