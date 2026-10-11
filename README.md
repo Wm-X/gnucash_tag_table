@@ -15,3 +15,5 @@ These scripts work but will need tweaking to work for you.
    
 here is a pic of a pivot table
 https://github.com/Wm-X/gnucash_tag_table/blob/main/Clipboard_10-08-2026_01.png 
+
+2026-10-11 include ACCOUNT TYPE in csv so Income Statement and Balance Sheet type analysis is easier
