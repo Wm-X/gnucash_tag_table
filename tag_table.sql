@@ -1,5 +1,5 @@
 .parameter init
-.parameter set @tagRE "'o'"
+.parameter set @tagRE "'s'"
 
 WITH RECURSIVE tree (
     guid,
@@ -45,6 +45,7 @@ CoA AS (
 jnl AS (
 SELECT DATE (transactions.post_date) AS dt
 	,transactions.description
+	,CoA.account_type
 	,CoA.account
 	,CASE 
 		WHEN splits.quantity_num = splits.value_num
