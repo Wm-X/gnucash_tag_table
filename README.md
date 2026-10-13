@@ -21,6 +21,6 @@ https://github.com/Wm-X/gnucash_tag_table/blob/main/Screenshot%202026-10-12%2013
 
 2026-10-11 include ACCOUNT TYPE in csv so Income Statement and Balance Sheet type analysis is easier
 
-2026-10-13 added tag_table_all.sql   include NULL values, the data that goes in the Other column in QuickBooks style reports Class reports
+2026-10-13 added tag_table_all.sql   include NULL values, the data that goes in the Other column of QuickBooks Class style reports
 
 2026-10-13 added 2 csv files for people to play with in their spreadsheet of choice, suggest Insert Pivot Table and tag as the column, account as the row and Sum val as the data to get started
