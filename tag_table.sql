@@ -1,5 +1,5 @@
 .parameter init
-.parameter set @tagRE "'s'"
+.parameter set @tagRE "'Customer .'"
 
 WITH RECURSIVE tree (
     guid,
