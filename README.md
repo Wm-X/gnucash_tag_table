@@ -20,3 +20,5 @@ here is a pic of a pivot table with matching gnucash transaction report
 https://github.com/Wm-X/gnucash_tag_table/blob/main/Screenshot%202026-10-12%20130639.png
 
 2026-10-11 include ACCOUNT TYPE in csv so Income Statement and Balance Sheet type analysis is easier
+
+2026-10-13 added tag_table_all.sql   include NULL values, the data that goes in the Other column in QuickBooks style reports Class reports
