@@ -1,0 +1,33 @@
+'dt','description','account_type','account','qty','ac_commodity','val','tx_currency','splits_guid','split_id','tag_location','tag','txt'
+'2026-07-01','Opening balance','ASSET','Assets:Principal Invested:Property 2','','',350000.0,'USD','197e42ba869446a2a6aa5cc5daac2b63',NULL,NULL,NULL,NULL
+'2026-07-01','Opening balance','EQUITY','Equity:Opening Balances','','',-200000.0,'USD','1f28d82cb4354152a8274b66e5c4d1dc',NULL,NULL,NULL,NULL
+'2026-08-22','Customer 2','INCOME','Income:Late Fees','','',-14.0,'USD','22dccc0270d94f8b95d77cb178447558','22dccc0270d94f8b95d77cb178447558','tx_desc','Customer 2','Customer 2'
+'2026-09-11','123 Attorney','PAYABLE','Accounts Payable','','',-250.0,'USD','2913da9aea6a41eea97206bcedd718eb',NULL,NULL,NULL,NULL
+'2026-08-22','Customer 1','ASSET','Assets:Principal Invested:Property 1','','',-2.0,'USD','2ff71a1d49ae4fb2a877c364e59791e0','2ff71a1d49ae4fb2a877c364e59791e0','tx_desc','Customer 1','Customer 1'
+'2026-09-11','123 Attorney','BANK','Assets:Wells Fargo','','',-250.0,'USD','36682dcea6074487aa50437388e182b8',NULL,NULL,NULL,NULL
+'2026-08-12','Customer 2','BANK','Assets:Wells Fargo','','',45.0,'USD','38cc8b8733f045f289003f7a0832b9c0','38cc8b8733f045f289003f7a0832b9c0','tx_desc','Customer 2','Customer 2'
+'2026-08-22','Customer 2','RECEIVABLE','Accounts Receivable','','',45.0,'USD','443f3643b7834b759ce8b17e12b0c3ce','443f3643b7834b759ce8b17e12b0c3ce','tx_desc','Customer 2','Customer 2'
+'2026-09-11','Monthly service charge','EXPENSE','Expenses:Bank Charges','','',2.990000000000000213,'USD','46c7879983b34cfcac38170a239f95f7',NULL,NULL,NULL,NULL
+'2026-09-11','Customer 1','RECEIVABLE','Accounts Receivable','','',-250.0,'USD','47bec3318b264ddca8781c4e8373344e','47bec3318b264ddca8781c4e8373344e','tx_desc','Customer 1','Customer 1'
+'2026-09-11','Customer 1','BANK','Assets:Wells Fargo','','',52.0,'USD','53d4e1ebb621414fa69e105fa4c11089','53d4e1ebb621414fa69e105fa4c11089','tx_desc','Customer 1','Customer 1'
+'2026-08-12','Customer 1','RECEIVABLE','Accounts Receivable','','',-21.0,'USD','57612d50598648c2b407cd2d02ddde15','57612d50598648c2b407cd2d02ddde15','sp_memo','Customer 1','Customer 1'
+'2026-09-11','Customer 1','RECEIVABLE','Accounts Receivable','','',-52.0,'USD','58cd564b06a24362b066704b0ec36521','58cd564b06a24362b066704b0ec36521','tx_desc','Customer 1','Customer 1'
+'2026-09-11','Customer 1','BANK','Assets:Wells Fargo','','',250.0,'USD','5930ead156474e679219110fd73a94e0','5930ead156474e679219110fd73a94e0','tx_desc','Customer 1','Customer 1'
+'2026-08-12','Customer 1','BANK','Assets:Wells Fargo','','',21.0,'USD','5ca3d08ac2a34d47befc4870a015e07c','5ca3d08ac2a34d47befc4870a015e07c','tx_desc','Customer 1','Customer 1'
+'2026-08-12','Customer 2','RECEIVABLE','Accounts Receivable','','',-45.0,'USD','6b1f6ab61c244a4b8759483300d5373d','6b1f6ab61c244a4b8759483300d5373d','sp_memo','Customer 2','Customer 2'
+'2026-08-22','Customer 2','INCOME','Income:Interest Income','','',-3.0,'USD','6c161575d59d41cfb7fda30b7da9142e','6c161575d59d41cfb7fda30b7da9142e','tx_desc','Customer 2','Customer 2'
+'2026-08-22','Customer 1','INCOME','Income:Interest Income','','',-6.0,'USD','6d94821520ec4bf4ae3770873a80354b','6d94821520ec4bf4ae3770873a80354b','tx_desc','Customer 1','Customer 1'
+'2026-09-11','123 Attorney','PAYABLE','Accounts Payable','','',250.0,'USD','76eb641545f9468da79374cfd638028e',NULL,NULL,NULL,NULL
+'2026-09-11','Customer 1','RECEIVABLE','Accounts Receivable','','',52.0,'USD','7977544251d44e0aa8b5ccc32d369140','7977544251d44e0aa8b5ccc32d369140','tx_desc','Customer 1','Customer 1'
+'2026-09-11','Customer 1','INCOME','Income:Reimbursed Legal Fees','','',-250.0,'USD','867e9b87308647cfbda993064b14a35c','867e9b87308647cfbda993064b14a35c','tx_desc','Customer 1','Customer 1'
+'2026-09-11','123 Attorney','EXPENSE','Expenses:Legal Fees','','',250.0,'USD','87d9076c52f649e5aea1e995e7681a7e',NULL,NULL,NULL,NULL
+'2026-07-01','Opening balance','ASSET','Assets:Principal Invested:Property 1','','',200000.0,'USD','8a16639ccbc54d71888949eac0da72fa',NULL,NULL,NULL,NULL
+'2026-09-11','Customer 1','RECEIVABLE','Accounts Receivable','','',250.0,'USD','8c369e4701d14b3993f53b549e0755c6','8c369e4701d14b3993f53b549e0755c6','tx_desc','Customer 1','Customer 1'
+'2026-07-01','Opening balance','EQUITY','Equity:Opening Balances','','',-350000.0,'USD','935696c68f0643ec90cfff2a8af40a0d',NULL,NULL,NULL,NULL
+'2026-08-22','Customer 2','ASSET','Assets:Principal Invested:Property 2','','',-16.0,'USD','ae0b536b1e46450d8da06b843292f4a4','ae0b536b1e46450d8da06b843292f4a4','tx_desc','Customer 2','Customer 2'
+'2026-08-22','Customer 1','LIABILITY','Liabilities:Escrow:Property 1:Collections','','',-12.0,'USD','c0f6de1bc9204a6fb7744aba5ea311d1','c0f6de1bc9204a6fb7744aba5ea311d1','tx_desc','Customer 1','Customer 1'
+'2026-08-22','Customer 1','INCOME','Income:Late Fees','','',-1.0,'USD','c9985ae10a974877a8a5e0e5c8acbc7f','c9985ae10a974877a8a5e0e5c8acbc7f','tx_desc','Customer 1','Customer 1'
+'2026-09-11','Monthly service charge','BANK','Assets:Wells Fargo','','',-2.990000000000000213,'USD','cec962079ddd4a719ea897b983501944',NULL,NULL,NULL,NULL
+'2026-08-22','Customer 2','LIABILITY','Liabilities:Escrow:Property 2:Collections','','',-12.0,'USD','de36b09966d1461ca6a4b381cdd427af','de36b09966d1461ca6a4b381cdd427af','tx_desc','Customer 2','Customer 2'
+'2026-09-11','Customer 1','LIABILITY','Liabilities:Escrow:Property 1:Collections','','',-52.0,'USD','e4ac6099cde6422a8341d76422d30e91','e4ac6099cde6422a8341d76422d30e91','tx_desc','Customer 1','Customer 1'
+'2026-08-22','Customer 1','RECEIVABLE','Accounts Receivable','','',21.0,'USD','f84cbd3345834d5a8e61138f8e99bf2a','f84cbd3345834d5a8e61138f8e99bf2a','tx_desc','Customer 1','Customer 1'
